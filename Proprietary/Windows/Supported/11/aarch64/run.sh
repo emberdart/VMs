@@ -9,7 +9,7 @@ qemu-system-aarch64 -M virt,highmem=off \
     -display cocoa \
     -drive file=win11.qcow2,if=none,format=qcow2,id=hd \
     -device usb-storage,drive=hd,serial=hd \
-    -nic user,model=virtio-net-pci \
+    -nic passt,model=virtio-net-pci \
     $QEMU_AAVMF
     # -boot menu=on \
     # -device usb-net \

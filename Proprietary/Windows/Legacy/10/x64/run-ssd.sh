@@ -3,7 +3,7 @@ $QEMU_X86_64 \
     $QEMU_USB \
     $QEMU_DISP_GL \
     $QEMU_VIRTIO_PERIPH \
-    -nic user,model=virtio \
+    -nic passt,model=virtio \
     $QEMU_SND \
     -drive file=SSD128G.img,id=hd \
     $QEMU_BALLOON \

@@ -9,4 +9,4 @@ qemu-system-aarch64 -M virt,accel=hvf -m 16G -cpu host -serial stdio -smp cores=
     -device virtio-blk-device,drive=hd,serial=hd \
     -drive file=nixos-broken.img,if=none,id=broken \
     -device virtio-blk-device,drive=broken,serial=broken \
-    -nic user,model=virtio-net-pci
+    -nic passt,model=virtio-net-pci
